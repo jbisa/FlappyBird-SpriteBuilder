@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     // These two variables are declared in class scope
     Character* character;
     CCPhysicsNode* physicsNode;
-    
+    float timeSinceObstacle;
     
 }
 
