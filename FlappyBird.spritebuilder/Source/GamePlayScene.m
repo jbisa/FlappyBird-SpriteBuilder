@@ -41,6 +41,11 @@
     
 }
 
+-(void)dummyMethod
+{
+    return;
+}
+
 
 
 @end
