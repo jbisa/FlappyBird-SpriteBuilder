@@ -6,7 +6,8 @@
 
 - (void)initialize
 {
-    // your code here
+    character = (Character*)[CCBReader load:@"Character"];
+    [physicsNode addChild:character];
 }
 
 -(void)update:(CCTime)delta
@@ -15,5 +16,15 @@
 }
 
 // put new methods here
+
+// Method so users can interact with the screen to play game
+-(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+    // This gets called EVERY TIME player touches screen
+    [character flap];
+    
+    
+}
+
+
 
 @end
